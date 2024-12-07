@@ -15,6 +15,13 @@ This tutorial will cover the steps necessary to set up osTicket within Microsoft
 
 - Windows 10</b> (22H2)
 
+- <h2>osTicket Prereqs Objectives</h2>
+
+- Set up Microsoft Azure VM
+- Download all osTicket dependencies 
+- Configure IIS to work with osTicket
+- Install osTicket
+
 <h2>Setting Up the VM</h2>
 
 ![image](https://github.com/user-attachments/assets/167e9e99-374b-4556-b04b-e721d347af28)
