@@ -104,10 +104,77 @@ We can view the osTicket landing page through servername > Sites > osTicket and 
 
 ![image](https://github.com/user-attachments/assets/901f623b-38d4-40a5-a2ab-af87a784bd6d)
 
+<p>
+Notice that some extensions are not enabled
+Go back to IIS, sites > Default > osTicket
+Double-click PHP Manager
+Click “Enable or disable an extension”
+Enable: php_imap.dll
+Enable: php_intl.dll
+Enable: php_opcache.dll
+Refresh the osTicket site in your browser, observe the changes
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/7c35e725-7070-4624-a1ff-da3f391bf136)
+
+<p>
+Navigate to the file shown above called ost-sampleconfig.php. We will need to rename this to ost-config.php
+Next, we will need to edit the file so that osTIcket has access to it
+Right click the file > Properties > Security > Advanced > Disable inheritance > Remove all inherited permissions 
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/d61f036f-9538-4792-8928-42ba5d4c3e21)
+
+<p>
+Now, we need to add a new principal. Click Add > Select a principal > Type everyone into the last box > Check Names > ok > check the full control box > Apply > ok
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/3b7bfb69-bbf0-4814-ae82-8f1c87a4ba39)
+<p>
+We can now continue setting up our osTicket installation in the browser. Give your helpdesk a name, and a default email(receives email from customers)
+. Set up your admin user (take note of the username and password in notepad)
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/75c535d4-9bab-473f-8933-320f77487cda)
+
+<p>
+Before clicking Install now, we need to install heidiSQL from the installation files folder. Leave all installation options as default. This is necessary so that our osTicket has a database to connect to and store its information
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/06e645de-407f-4ed1-a2a8-d20e8ee4ddfb)
+
+<p>
+After the installation has finished, click New at the bottom left and make sure the user and password fields are both "root" like we specified before. Then click Open. If successful, the following page will be displayed showing all database connections.
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/c374cdbd-8ffd-4688-8acd-3f676efb7530)
 
 
+<p>
+We will now create our database that osTicket will use by right clicking the Dolphin picture with "Unamed" next to it and click create new > database. Name the database osTicket. Once the database is created, we can finalize the osTicket installation process. Fill out the remaining database setting section as follows with a password of root:
+</p>
+<br />
 
+![image](https://github.com/user-attachments/assets/b72736d4-30d5-4405-b9e2-d40e06d4e5b1)
 
+<p>
+Good job, hopefully it is installed with no errors!
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+
+End Users osTicket URL:
+http://localhost/osTicket/ 
+
+Clean up
+Delete: C:\inetpub\wwwroot\osTicket\setup
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+</p>
+<br />
 
 
 
