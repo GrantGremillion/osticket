@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial will cover the steps necessary to set up osTicket within Microsoft Azure VM's and then test and experiment with several different features of osTicket<br />
+<h1>osTicket - Prerequisites and Installation</h1>
+This tutorial will cover the steps necessary to set up osTicket within Microsoft Azure VM's <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -14,7 +14,6 @@ This tutorial will cover the steps necessary to set up osTicket within Microsoft
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (22H2)
-
 
 <h2>Setting Up the VM</h2>
 
