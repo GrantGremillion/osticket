@@ -3,12 +3,7 @@
 </p>
 
 <h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+This tutorial will cover the steps necessary to set up osTicket within Microsoft Azure VM's and then test and experiment with several different features of osTicket<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -18,22 +13,22 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b> (22H2)
 
-<h2>Ticket Lifecycle Stages</h2>
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+<h2>Setting Up the VM</h2>
 
-<h2>Lifecycle Stages</h2>
+![image](https://github.com/user-attachments/assets/167e9e99-374b-4556-b04b-e721d347af28)
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+When setting up the VM, create a new resource group and assign the vm to that group. Then, give your vm a name and make it a Windows 10 pro version 22H2 with a size of at least 2 vcpus and 8GB memory. Also create a username and password for your vm while making sure to take note of both in a notepad. After everything is ready, press review + create and then create.
 </p>
+<br />
+
+![image](https://github.com/user-attachments/assets/f0bd3ebb-019a-472d-864d-0d69643f1db5)
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once the vm has finished deploying, use a remote desktop client to access the vm (In the image, I am using Windows built in Remote Desktop Client). You will need the public IP of the machine as well as the credentials you created for it.
 </p>
 <br />
 
@@ -41,14 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+When you are inside the vm, download the following files inside the vm - https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD 
+You can just copy the link inside of the Edge browser. Once is is downloaded, extract it somewhere on your computer. We will use the files in this folder to install osTicket and some of the dependencies.
 </p>
 <br />
