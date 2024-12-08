@@ -38,6 +38,8 @@ Once the vm has finished deploying, use a remote desktop client to access the vm
 </p>
 <br />
 
+<h2>Downloading all Dependancies</h2>
+
 ![image](https://github.com/user-attachments/assets/2734156c-25f6-4331-9d8f-13257ce753c3)
 <p>
 When you are inside the vm, download the following files inside the vm - https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD 
@@ -73,6 +75,8 @@ Then, run the VC_redist.x86 file. Next, install mysql through the mysql-5.5.62-w
 </p>
 <br />
 
+<h2>Configuring IIS</h2>
+
 ![image](https://github.com/user-attachments/assets/a1a2f681-a3de-439c-a3e2-a7278c8d00e9)
 <p>
 Next, we will need to open the IIS manager as an admin (right click and select "Run as administrator")
@@ -101,6 +105,8 @@ We will need to start and stop the IIS server after this again.
 
 </p>
 <br />
+
+<h2>Installing osTicket/h2>
 
 ![image](https://github.com/user-attachments/assets/9fb8bea6-3fc7-4120-9d03-2472f5c0640f)
 <p>
