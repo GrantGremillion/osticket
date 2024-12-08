@@ -106,7 +106,7 @@ We will need to start and stop the IIS server after this again.
 </p>
 <br />
 
-<h2>Installing osTicket/h2>
+<h2>Installing osTicket</h2>
 
 ![image](https://github.com/user-attachments/assets/9fb8bea6-3fc7-4120-9d03-2472f5c0640f)
 <p>
